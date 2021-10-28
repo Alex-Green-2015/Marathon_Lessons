@@ -9,6 +9,8 @@ public class Task2 {
         Player player1 = new Player(Player.MAX_STAMINA - random.nextInt(11)); // between 90 and 100
         Player player2 = new Player(Player.MAX_STAMINA - random.nextInt(11));
         Player player3 = new Player(Player.MAX_STAMINA - random.nextInt(11));
+        Player.info();
+
         Player player4 = new Player(Player.MAX_STAMINA - random.nextInt(11));
         Player player5 = new Player(Player.MAX_STAMINA - random.nextInt(11));
         Player player6 = new Player(Player.MAX_STAMINA - random.nextInt(11));
