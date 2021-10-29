@@ -14,7 +14,6 @@ public class Task2 {
         Player player4 = new Player(Player.MAX_STAMINA - random.nextInt(11));
         Player player5 = new Player(Player.MAX_STAMINA - random.nextInt(11));
         Player player6 = new Player(Player.MAX_STAMINA - random.nextInt(11));
-
         Player.info();
 
         while (player3.getStamina() > 0) {
