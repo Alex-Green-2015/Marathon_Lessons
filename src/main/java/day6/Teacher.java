@@ -22,17 +22,21 @@ public class Teacher {
     }
 
     private String convertScoreToGrade(int score) {
+        String graduation = "";
         switch (score) {
             case 0:
-                return "неудовлетворительно";
+                graduation = "неудовлетворительно";
+                break;
             case 1:
-                return "удовлетворительно";
+                graduation = "удовлетворительно";
+                break;
             case 2:
-                return "хорошо";
+                graduation = "хорошо";
+                break;
             case 3:
-                return "отлично";
-            default:
-                return "оценка поставлена неккорректна";
+                graduation = "отлично";
+                break;
         }
+        return graduation;
     }
 }
