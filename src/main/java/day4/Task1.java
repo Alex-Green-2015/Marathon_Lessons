@@ -1,6 +1,5 @@
 package day4;
 
-import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -29,8 +28,7 @@ public class Task1 {
             }
             if (arraysInteger[i] % 2 == 1) {
                 counterOdd++;
-            }
-            if (arraysInteger[i] % 2 == 0) {
+            } else {
                 counterEven++;
             }
             summ = summ + arraysInteger[i];
