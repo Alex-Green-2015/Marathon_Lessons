@@ -10,7 +10,6 @@ public class Task1 {
             output = output + " " + i;
         }
         long stopTime = System.currentTimeMillis();
-        output = output + " ";
         System.out.println(output);
         System.out.println("Длительность работы, в мс.: " + (stopTime - startTime));
 

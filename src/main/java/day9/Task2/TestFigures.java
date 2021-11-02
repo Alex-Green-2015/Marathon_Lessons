@@ -26,7 +26,7 @@ public class TestFigures {
     public static double calculateRedPerimeter(Figure[] figures) {
         double sumPerimeter = 0;
         for (Figure figure : figures) {
-            if (figure.getColor().equals(RED_COLOR)) {
+            if (RED_COLOR.equals(figure.getColor())) {
                 sumPerimeter += figure.perimeter();
             }
         }
@@ -36,7 +36,7 @@ public class TestFigures {
     public static double calculateRedArea(Figure[] figures) {
         double sumArea = 0;
         for (Figure figure : figures) {
-            if (figure.getColor().equals(RED_COLOR)) {
+            if (RED_COLOR.equals(figure.getColor())) {
                 sumArea += figure.area();
             }
         }
