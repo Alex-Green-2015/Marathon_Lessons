@@ -32,9 +32,15 @@ public abstract class Hero implements PhysAttack {
     }
 
     protected void increaseHealthPointsBy(int healthPoints) {
+        if (health + healthPoints > MAX_HEALTH) {
+            health = MAX_HEALTH;
+            return;
+        }
+        if (health + healthPoints < MIN_HEALTH) {
+            health = MIN_HEALTH;
+            return;
+        }
         health += healthPoints;
-        if (health > MAX_HEALTH) health = MAX_HEALTH;
-        if (health < MIN_HEALTH) health = MIN_HEALTH;
     }
 
     protected void reduceHealthPointsBy(int healthPoints) {
