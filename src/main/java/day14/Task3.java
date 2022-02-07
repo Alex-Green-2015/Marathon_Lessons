@@ -33,7 +33,7 @@ public class Task3 {
                 Person person = new Person(name, year);
                 people.add(person);
             }
-
+            scanner.close();
             return people;
 
         } catch (FileNotFoundException e) {

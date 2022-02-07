@@ -31,8 +31,8 @@ public class Task2 {
                 people.add(person);
             }
 
+            scanner.close();
             return people;
-
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {

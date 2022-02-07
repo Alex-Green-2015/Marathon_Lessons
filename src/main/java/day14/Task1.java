@@ -35,7 +35,7 @@ public class Task1 {
             // убрать лишние нули после запятой. Округление до тысячных
             NumberFormat numberFormat = new DecimalFormat("#.###");
             System.out.println(numberFormat.format(sum));
-
+            scanner.close();
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         } catch (IndexOutOfBoundsException e) {
