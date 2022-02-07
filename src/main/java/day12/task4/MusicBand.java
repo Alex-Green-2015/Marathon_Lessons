@@ -34,12 +34,7 @@ public class MusicBand {
     }
 
     public static void transferMembers(MusicBand givingBand, MusicBand hostBand) {
-        // добавление по одному, чтобы предотвартить дубликаты участников.
-        // например, для случая, если один участник был изначально в двух группах.
-        for (String member : givingBand.getMembers()) {
-            hostBand.addMember(member);
-        }
-
+        hostBand.getMembers().addAll(givingBand.getMembers());
         // удаляем всех участников из первой группы (для успешного прохождения теста)
         givingBand.getMembers().clear();
     }
