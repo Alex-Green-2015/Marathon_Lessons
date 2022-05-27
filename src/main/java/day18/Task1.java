@@ -3,7 +3,6 @@ package day18;
 public class Task1 {
     public static void main(String[] args) {
         int[] numbers = {1, 10, 1241, 50402, -50, 249, 10215, 665, 2295, 7, 311};
-//        int[] numbers = null;
         int pointer = 0;
         try {
             int sum = recursionSum(numbers, pointer);
@@ -20,7 +19,6 @@ public class Task1 {
         if (numbers.length - 1 == pointer) {
             return numbers[pointer];
         }
-        int currentElement = numbers[pointer];
-        return currentElement + recursionSum(numbers, pointer + 1);
+        return numbers[pointer] + recursionSum(numbers, pointer + 1);
     }
 }

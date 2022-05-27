@@ -11,11 +11,11 @@ public class Task2 {
             return 0;
         }
 
-        int foundedSeven = 0;
         if (number % 10 == 7) {
-            foundedSeven = 1;
+            return 1 + count7(number / 10);
+        } else {
+            return count7(number / 10);
         }
-        return foundedSeven + count7(number / 10);
     }
 
 }
