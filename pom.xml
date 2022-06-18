@@ -67,7 +67,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.3</version>
                 <configuration>
-                    <mainClass>day19.task3.DisplayTaxiMap</mainClass>
+                    <mainClass>day19.task2.DisplayTaxiMap</mainClass>
                 </configuration>
             </plugin>
         </plugins>
